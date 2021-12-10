@@ -27,7 +27,7 @@ jobs:
           bash ./scripts/install-kubectl.sh
       - name: Install Helm3
         run: |
-          bash ./scripts/install-helm.sh
+          bash ./scripts/install-helm.sh  
       - name: Deploy to staging
         run: |
           bash ./scripts/deploy.sh   ${{ secrets.STAGING_NAMESPACE }}  ${{ secrets.RELEASE_NAME }}
